@@ -9,28 +9,24 @@
 }
 
   .Navbar {
-      margin-left: 300px;
-      margin-right: 300px;
-      font-size: 25px;
-      border-radius: 10px;
-      border-style: solid;
-      border-color: #d9d9d9;
-    }
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #d9d9d9;
+  }
 
   .Tabs {
     margin-top: 100px;
     margin-left: 250px;
     margin-right: 250px;
     font-size: 25px;
-    font-weight: bold;
-    font-family: cursive;
-
+    font-family: sans-serif;
     border-style: solid;
     border-radius: 10px;
+    border-color: #d9d9d9;
     height: 800px;
     background-color: #343a40;
   }
-
-    .Tab {
-
-    }
