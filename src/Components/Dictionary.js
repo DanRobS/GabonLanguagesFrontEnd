@@ -8,7 +8,7 @@ class Dictionary extends React.Component {
 
   render() {
     return (
-      <div className="Main_div">
+      <div className="Main_div" class="container">
         <div className="Form_div">
           <Form inline className="Input_form">
             <Form.Label htmlFor="inlineFormInputName2" srOnly>

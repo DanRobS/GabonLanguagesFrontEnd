@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import './custom.scss'
 import Dictionary from './Components/Dictionary'
+import History from './Components/History'
 import React from 'react'
 import { Navbar, Nav, Button, NavDropdown,
         Tabs, Tab  } from 'react-bootstrap'
@@ -32,7 +32,7 @@ class App extends React.Component {
               <Dictionary/>
             </Tab>
             <Tab eventKey="history" title="History">
-
+              <History/>
             </Tab>
             <Tab eventKey="language specifics"
                   title="Languague specifics">
