@@ -2,6 +2,7 @@ import './App.css';
 import './custom.scss'
 import Dictionary from './Components/Dictionary'
 import History from './Components/History'
+import LanguageSpecifics from './Components/LanguageSpecifics'
 import React from 'react'
 import { Navbar, Nav, Button, NavDropdown,
         Tabs, Tab  } from 'react-bootstrap'
@@ -36,6 +37,7 @@ class App extends React.Component {
             </Tab>
             <Tab eventKey="language specifics"
                   title="Languague specifics">
+              <LanguageSpecifics/>
             </Tab>
           </Tabs>
         </div>
