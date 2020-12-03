@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'react-bootstrap/Image'
+//import Image from 'react-bootstrap/Image'
 import '../Components_styles/History.css'
 import '../custom.scss'
 

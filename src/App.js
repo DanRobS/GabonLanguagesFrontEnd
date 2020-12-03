@@ -3,9 +3,11 @@ import './custom.scss'
 import Dictionary from './Components/Dictionary'
 import History from './Components/History'
 import LanguageSpecifics from './Components/LanguageSpecifics'
+import About from './Components/About'
 import React from 'react'
-import { Navbar, Nav, Button, NavDropdown,
+import { Navbar, Nav, NavDropdown,
         Tabs, Tab  } from 'react-bootstrap'
+import { Route, BrowserRouter as Router, Link } from 'react-router-dom'
 
 class App extends React.Component {
 
@@ -13,19 +15,26 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        <Navbar collapseOnSelect expand="lg" bg="dark"
-                variant="dark" className="Navbar">
-          <Navbar.Brand className="Navbar-Brand"
-              href="/">Online language dictionary</Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link className="homeLink" href="/">Home</Nav.Link>
-            <NavDropdown title="Dictionaries" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#Nzebi">Nzebi</NavDropdown.Item>
-              <NavDropdown.Item href="#Fang">Fang</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link className="homeLink" href="/">About</Nav.Link>
-          </Nav>
-        </Navbar>
+        <Router>
+          <Navbar collapseOnSelect expand="lg" bg="dark"
+                  variant="dark" className="Navbar">
+            <Navbar.Brand className="Navbar-Brand"
+                href="/">Online language dictionary</Navbar.Brand>
+            <Nav className="mr-auto">
+              <Nav.Item>
+                <Nav.Link className="homeLink" as={Link} to="/">Home</Nav.Link>
+              </Nav.Item>
+              <NavDropdown title="Dictionaries" id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/Dictionaries/Nzebi">Nzebi</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Dictionaries/Fang">Fang</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Item>
+                <Nav.Link className="homeLink" as={Link} to="/about">About</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar>
+        </Router>
+
 
         <div className="Tabs">
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
