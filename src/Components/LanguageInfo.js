@@ -1,6 +1,5 @@
 import '../Components_styles/LanguageInfo.css';
 import '../custom.scss'
-import Home from './Home'
 import Dictionary from './LanguagueInfoTabs/Dictionary'
 import History from './LanguagueInfoTabs/History'
 import LanguageSpecifics from './LanguagueInfoTabs/LanguageSpecifics'
