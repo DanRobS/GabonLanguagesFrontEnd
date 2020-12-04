@@ -1,14 +1,12 @@
-import '../App.css';
+import '../Components_styles/LanguageInfo.css';
 import '../custom.scss'
 import Home from './Home'
 import Dictionary from './LanguagueInfoTabs/Dictionary'
 import History from './LanguagueInfoTabs/History'
 import LanguageSpecifics from './LanguagueInfoTabs/LanguageSpecifics'
 import React from 'react'
-import { Navbar, Nav, NavDropdown,
-        Tabs, Tab  } from 'react-bootstrap'
-import { Route, BrowserRouter as Router, Link,
-          Switch } from 'react-router-dom'
+import { Tabs, Tab  } from 'react-bootstrap'
+import { Route, Switch } from 'react-router-dom'
 
 class LanguageInfo extends React.Component {
   render() {

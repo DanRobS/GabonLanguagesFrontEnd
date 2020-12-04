@@ -4,8 +4,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import LanguageInfo from './Components/LanguageInfo'
 import React from 'react'
-import { Navbar, Nav, NavDropdown,
-        Tabs, Tab  } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { Route, BrowserRouter as Router, Link,
           Switch } from 'react-router-dom'
 

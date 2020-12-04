@@ -1,9 +1,14 @@
+import '../custom.scss'
+import '../Components_styles/About.css'
 import React from 'react'
+
 
 class About extends React.Component {
   render() {
     return(
-      <h1>About</h1>
+      <div className="Main-div">
+        <h1>About</h1>
+      </div>
     )
   }
 }
