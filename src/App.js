@@ -1,8 +1,8 @@
 import './App.css';
 import './custom.scss'
-import Dictionary from './Components/Dictionary'
-import History from './Components/History'
-import LanguageSpecifics from './Components/LanguageSpecifics'
+import Home from './Components/Home'
+import About from './Components/About'
+import LanguageInfo from './Components/LanguageInfo'
 import React from 'react'
 import { Navbar, Nav, NavDropdown,
         Tabs, Tab  } from 'react-bootstrap'
@@ -23,6 +23,7 @@ class App extends React.Component {
             <Nav className="mr-auto">
               <Nav.Item>
                 <Nav.Link className="homeLink" href="/">Home</Nav.Link>
+
               </Nav.Item>
               <NavDropdown title="Dictionaries" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to="/Dictionaries/Nzebi">Nzebi</NavDropdown.Item>
@@ -34,22 +35,12 @@ class App extends React.Component {
             </Nav>
           </Navbar>
 
-        <div className="Tabs">
-        <Switch>
-          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-            <Tab eventKey="dictionary" title="Dictionary">
-              <Route exact path='/Dictionaries/Nzebi' component={Dictionary}></Route>
-            </Tab>
-            <Tab eventKey="history" title="History">
-              <Route exact path='/Dictionaries/Nzebi' component={History}></Route>
-            </Tab>
-            <Tab eventKey="language specifics"
-                  title="Languague specifics">
-              <Route exact path='/Dictionaries/Nzebi' component={LanguageSpecifics}></Route>
-            </Tab>
-          </Tabs>
-        </Switch>
-        </div>
+          <Switch>
+            <Route exact path='/' component={Home}></Route>
+            <Route exact path='/Dictionaries/Nzebi' component={LanguageInfo}></Route>
+            <Route exact path='/about' component={About}></Route>
+          </Switch>
+
         </Router>
       </div>
     );

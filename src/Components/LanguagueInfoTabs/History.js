@@ -1,7 +1,7 @@
 import React from 'react'
 //import Image from 'react-bootstrap/Image'
-import '../Components_styles/History.css'
-import '../custom.scss'
+import '../../Components_styles/LanguageInfoStyles/History.css'
+import '../../custom.scss'
 
 
 class History extends React.Component {

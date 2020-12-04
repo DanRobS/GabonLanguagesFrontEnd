@@ -1,8 +1,8 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import '../Components_styles/Dictionary.css'
-import '../custom.scss'
+import '../../Components_styles/LanguageInfoStyles/Dictionary.css'
+import '../../custom.scss'
 
 class Dictionary extends React.Component {
 

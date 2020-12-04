@@ -1,8 +1,8 @@
 import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 //import Button from 'react-bootstrap/Button'
-import '../Components_styles/LanguageSpecifics.css'
-import '../custom.scss'
+import '../../Components_styles/LanguageInfoStyles/LanguageSpecifics.css'
+import '../../custom.scss'
 
 class LanguageSpecifics extends React.Component {
   render(){
