@@ -1,39 +1,33 @@
 .Main_div {
-  margin: 100px;
 
-  /*
-  border-style: solid;
-  border-color: #d9d9d9;
-  border-radius: 10px;
-  */
 }
 
-  .Section_type_text {
-    margin-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+.Section_type_text {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
-    .Section_title {
-      margin-top: 20px;
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
+.Section_title {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
 
-    .Section_text {
-      text-align: justify;
-      text-justify: inter-word;
-      font-size: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+.Section_text {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  .Section_type_picture {
-    /*
-    border-style: solid;
-    border-radius: 10px;
-    */
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-  }
+.Section_type_picture {
+  /*
+  border-style: solid;
+  border-radius: 10px;
+  */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}

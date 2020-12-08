@@ -12,14 +12,15 @@ class LanguageInfo extends React.Component {
     return (
       <div className="Tabs">
         <Switch>
-          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-            <Tab eventKey="dictionary" title="Dictionary">
+          <Tabs defaultActiveKey="Dictionary" id="uncontrolled-tab-example"
+            className="container">
+            <Tab eventKey="Dictionary" title="Dictionary">
               <Route exact path='/Dictionaries/Nzebi' component={Dictionary}></Route>
             </Tab>
-            <Tab eventKey="history" title="History">
+            <Tab eventKey="History" title="History">
               <Route exact path='/Dictionaries/Nzebi' component={History}></Route>
             </Tab>
-            <Tab eventKey="language specifics"
+            <Tab eventKey="Hanguage specifics"
                   title="Languague specifics">
               <Route exact path='/Dictionaries/Nzebi' component={LanguageSpecifics}></Route>
             </Tab>

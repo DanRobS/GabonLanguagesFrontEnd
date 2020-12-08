@@ -7,7 +7,7 @@ import '../../custom.scss'
 class LanguageSpecifics extends React.Component {
   render(){
     return (
-      <div className="Main_div" >
+      <div className="Main_div" className="container" >
         <Jumbotron className="Jumbotron_div" class="container">
           <h1 className="Section_title">Rule title</h1>
           <p className="Section_text">

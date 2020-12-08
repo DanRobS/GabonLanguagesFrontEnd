@@ -1,40 +1,39 @@
-.Main_div {
-  margin: 100px;
+#Main_div {
+
+}
+
+.Form_div {
+  margin-left: 100px;
+  margin-right: 100px;
+
   /*
-  border-style: solid;
-  border-color: #d9d9d9;
-  border-radius: 10px;
+  border-style: dashed;
   */
 }
 
-  .Form_div {
-    margin-left: 100px;
-    margin-right: 100px;
-    /*
-    border-style: dashed;
-    */
-  }
+.Input_form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-  .Input_form {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+#Response_div {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: solid;
+  border-radius: 10px;
+}
 
-  .Response_div {
-    margin: 100px;
-    border-style: solid;
-    border-radius: 10px;
-  }
+.Response_word {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
 
-    .Response_word {
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
+.Response_example {
+  margin-left: 10px;
+}
 
-    .Response_example {
-      margin-left: 10px;
-    }
-
-    .Response_translation {
-      margin-left: 10px;
-    }
+.Response_translation {
+  margin-left: 10px;
+}

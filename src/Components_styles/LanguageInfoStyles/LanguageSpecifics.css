@@ -1,6 +1,4 @@
 .Main_div {
-  margin-top: 10px;
-  height: 700px;
   /*
   border-style: ridge;
   border-color: #d9d9d9;
@@ -8,31 +6,31 @@
   */
 }
 
-  .Jumbotron_div {
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    /*
-    border-style: solid;
-    border-radius: 10px;
-    */
-    background-color: #454d54;
-  }
+.Jumbotron_div {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*
+  border-style: solid;
+  border-radius: 10px;
+  */
+  background-color: #454d54;
+}
 
-    .Section_title {
-      margin-top: 0px;
-    }
+.Section_title {
+  margin-top: 0px;
+}
 
-    .Section_text {
-      font-size: 20px;
-      text-align: justify;
-      text-justify: inter-word;
-    }
+.Section_text {
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
-    .Section_example {
-      text-align: justify;
-      text-justify: inter-word;
-      font-size: 20px;
-      margin-left: 20px;
-      font-style: italic;
-    }
+.Section_example {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-left: 20px;
+  font-style: italic;
+}
