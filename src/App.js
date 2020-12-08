@@ -51,7 +51,12 @@ class App extends React.Component {
             </Switch>
           </div>
         </Router>
-        
+        {/*
+        <footer id="footer-div" className="container">
+        <p>Author : This Guy</p>
+        <a href="mailto:thisguy@mailservice.com">thisguy@mailservice.com</a>
+        </footer>
+        */}
       </div>
     );
   }
