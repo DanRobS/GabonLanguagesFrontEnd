@@ -1,47 +1,22 @@
 import './App.css';
 import './custom.scss'
+import AppNavBar from './Components/AppNavBar'
 import Home from './Components/Home'
 import About from './Components/About'
 import LanguageInfo from './Components/LanguageInfo'
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl,
-          Button } from 'react-bootstrap'
-import { Route, BrowserRouter as Router, Link,
+import { Route, BrowserRouter as Router,
           Switch } from 'react-router-dom'
 
 class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
 
+      <div className="App">
         <Router>
 
-          <div id="navbar-div" className="container">
-            <Navbar collapseOnSelect expand="lg" bg="dark"
-                    variant="dark" className="Navbar">
-              <Navbar.Brand className="Navbar-Brand"
-                  href="/">Online language dictionary</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Item>
-                  <Nav.Link className="homeLink" href="/">Home</Nav.Link>
-
-                </Nav.Item>
-                <NavDropdown title="Dictionaries" id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="/Dictionaries/Nzebi">Nzebi</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/Dictionaries/Fang">Fang</NavDropdown.Item>
-                </NavDropdown>
-
-              </Nav>
-              <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-light">Search</Button>
-              </Form>
-              </Navbar.Collapse>
-            </Navbar>
-          </div>
+          <AppNavBar />
 
           <div id="center-div" className="container">
             <Switch>
