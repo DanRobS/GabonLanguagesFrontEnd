@@ -3,17 +3,38 @@
 }
 
 .Form_div {
-  margin-left: 100px;
-  margin-right: 100px;
+  
+
 
   /*
   border-style: dashed;
   */
 }
 
+.row_style {
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.col_style {
+  margin-top: 1%;
+  padding: 0.5%;
+
+  border-style: solid;
+  border-color: white;
+  
+  display: flex;
+  justify-content: center;
+}
+
 .Input_form {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /*
+  border-style: solid;
+  border-color: red;
+  */
+  margin-top: 20px;
+  padding: 3%;
 }
 
 #Response_div {
@@ -23,6 +44,8 @@
   padding-right: 20px;
   border-style: solid;
   border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .Response_word {

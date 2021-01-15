@@ -7,6 +7,7 @@ import LanguageInfo from './Components/LanguageInfo'
 import React from 'react'
 import { Route, BrowserRouter as Router,
           Switch } from 'react-router-dom'
+import { Container } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -17,14 +18,17 @@ class App extends React.Component {
         <Router>
 
           <AppNavBar />
-
-          <div id="center-div" className="container">
-            <Switch>
-              <Route exact path='/' component={Home}></Route>
-              <Route exact path='/Dictionaries/Nzebi' component={LanguageInfo}></Route>
-              <Route exact path='/about' component={About}></Route>
-            </Switch>
-          </div>
+          
+          <Container>
+            <div id="center-div">
+              <Switch>
+                <Route exact path='/' component={Home}></Route>
+                <Route exact path='/Dictionaries/Nzebi' component={LanguageInfo}></Route>
+                <Route exact path='/about' component={About}></Route>
+              </Switch>
+            </div>
+          </Container>
+          
         </Router>
         {/*
         <footer id="footer-div" className="container">
