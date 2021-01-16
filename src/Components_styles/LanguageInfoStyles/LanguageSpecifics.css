@@ -1,36 +1,53 @@
 .Main_div {
-  /*
-  border-style: ridge;
-  border-color: #d9d9d9;
-  border-radius: 10px;
-  */
+ 
 }
 
 .Jumbotron_div {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  /*
-  border-style: solid;
-  border-radius: 10px;
-  */
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
   background-color: #454d54;
 }
 
 .Section_title {
-  margin-top: 0px;
+  margin-top: 0%;
 }
 
 .Section_text {
-  font-size: 20px;
+  font-size: 100%;
   text-align: justify;
   text-justify: inter-word;
 }
 
 .Section_example {
   text-align: justify;
-  text-justify: inter-word;
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 80%;
+  margin-left: 3%;
+  font-style: italic;
+}
+
+/***********************/
+/*CSS FOR MEDIA QUERIES*/
+/***********************/
+
+.Jumbotron_div_phone {
+  margin-top: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #454d54;
+}
+
+.Section_title_phone {
+  font-size: 100%;
+}
+
+.Section_text_phone {
+  font-size: 80%;
+  text-align: justify;
+}
+
+.Section_example_phone {
+  text-align: justify;
+  font-size: 80%;
   font-style: italic;
 }

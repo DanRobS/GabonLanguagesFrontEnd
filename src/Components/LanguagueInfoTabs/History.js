@@ -10,11 +10,13 @@ class History extends React.Component {
     return (
       <div class="container">
         
+        {/************************/}
         {/* PADS AND LAPTOP SIZE */}
+        {/************************/}
         <MediaQuery minDeviceWidth={769}>
-          <div class="Section_type_text">
-            <h1 class="Section_title"> Section title </h1>
-            <p class="Section_text">
+          <div className="Section_type_text">
+            <h1 className="Section_title"> Section title </h1>
+            <p className="Section_text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -24,11 +26,11 @@ class History extends React.Component {
             </p>
           </div>
 
-          <div class="Section_type_picture">
-            <img class="media-heading mr-3" src="img_girl.jpg" width="50px" height="50px" />
-            <div class="media-body">
-              <h5 class="media-heading"> Media heading </h5>
-              <p class="Section_text">
+          <div className="Section_type_picture">
+            <img className="media-heading mr-3" src="img_girl.jpg" width="50px" height="50px" />
+            <div className="media-body">
+              <h5 className="media-heading"> Media heading </h5>
+              <p className="Section_text">
                 Cras sit amet nibh libero, in gravida nulla. 
                 Nulla vel metus scelerisque ante sollicitudin. 
                 Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
@@ -39,11 +41,13 @@ class History extends React.Component {
         </MediaQuery>
 
 
+        {/***********************/}
         {/* PHONE-SIZED SCREENS */}
+        {/***********************/}
         <MediaQuery maxDeviceWidth={768}>
-          <div class="Section_type_text_phone">
-              <h1 class="Section_title_phone"> Section title </h1>
-              <p class="Section_text_phone">
+          <div className="Section_type_text_phone">
+              <h1 className="Section_title_phone"> Section title </h1>
+              <p className="Section_text_phone">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -53,11 +57,11 @@ class History extends React.Component {
               </p>
             </div>
 
-            <div class="Section_type_picture_phone">
+            <div className="Section_type_picture_phone">
               <img src="img_girl.jpg" width="50px" height="50px" class="mr-3"/>
-              <div class="media-body">
+              <div className="media-body">
                 <h5> Media heading </h5>
-                <p class="Section_text_phone">
+                <p className="Section_text_phone">
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
                   Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac 
                   nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
