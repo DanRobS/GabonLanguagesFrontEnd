@@ -3,7 +3,8 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import '../../Components_styles/LanguageInfoStyles/Dictionary.css'
 import '../../custom.scss'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row, InputGroup, FormControl } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Dictionary extends React.Component {
 
@@ -16,30 +17,24 @@ class Dictionary extends React.Component {
             <Container>
               <Row className="row_style">
                 <Col className="col_style">FR</Col>
-                <Col className="col_style" xs={1}></Col>
+                <Col className="col_style" xs={1}><FontAwesomeIcon icon="exchange-alt" /></Col>
                 <Col className="col_style">NZ</Col>
               </Row>
             </Container>
           </div>
 
-          <Container>
-          <Form className="Input_form">
-            <Row>
-              <Col>
-                <Form.Control
-                  className="mb-2 mr-sm-2"
-                  id="inlineFormInputName2"
-                  placeholder="Type a word"
-                />
-              </Col>
-              <Col>
-                <Button type="submit" className="mb-2">
-                  Translate
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-          </Container>
+          <div className="dictionaryForm">
+          <InputGroup className="mb-3">
+              <FormControl
+                placeholder="Type a word"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <InputGroup.Append>
+                <Button variant="outline-secondary">Button</Button>
+              </InputGroup.Append>
+            </InputGroup>
+          </div>
         </div>
         <div id="Response_div">
             <h2 className="Response_word"> Response word </h2>

@@ -8,6 +8,11 @@ import React from 'react'
 import { Route, BrowserRouter as Router,
           Switch } from 'react-router-dom'
 import { Container } from 'react-bootstrap';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { faExchangeAlt } from '@fortawesome/free-solid-svg-icons'
+
+library.add(far, faExchangeAlt)
 
 class App extends React.Component {
 

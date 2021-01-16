@@ -25,7 +25,20 @@
   border-color: white;
   
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.dictionaryForm {
+/*
+  border-style: solid;
+  border-color: red;
+*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2%;
 }
 
 .Input_form {
@@ -33,6 +46,8 @@
   border-style: solid;
   border-color: red;
   */
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   padding: 3%;
 }
