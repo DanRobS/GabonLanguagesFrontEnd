@@ -1,14 +1,9 @@
 .Form_div {
-  
-
-
-  /*
-  border-style: dashed;
-  */
+  margin-top: 3%;
 }
 
 .row_style {
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -16,7 +11,7 @@
 .col_style {
   margin-top: 1%;
   padding: 0.5%;
-
+  border-radius: 10px;
   border-style: solid;
   border-color: white;
   
@@ -26,33 +21,26 @@
 }
 
 .dictionaryForm {
-/*
-  border-style: solid;
-  border-color: red;
-*/
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .Input_form {
-  /*
-  border-style: solid;
-  border-color: red;
-  */
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   padding: 3%;
 }
 
 #Response_div {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   border-style: solid;
   border-radius: 10px;
   margin-left: 5%;
@@ -60,14 +48,94 @@
 }
 
 .Response_word {
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-bottom: 1.5%;
+  margin-left: 1%;
 }
 
 .Response_example {
-  margin-left: 10px;
+  margin-left: 1%;
 }
 
 .Response_translation {
-  margin-left: 10px;
+  margin-left: 1%;
+}
+
+/***********************/
+/*CSS FOR MEDIA QUERIES*/
+/***********************/
+
+.Form_div_phone {
+  margin-top: 10%;
+}
+
+.row_style_phone {
+  margin-top: 8%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.col_style_icon_phone {
+  margin-top: 1%;
+  
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col_style_phone {
+  margin-top: 1%;
+  padding: 0.5%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dictionaryForm_phone {
+  padding-top: 10%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Input_form_phone {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+#Response_div_phone {
+  margin-top: 20%;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Response_word_phone {
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  margin-left: 1%;
+}
+
+.Response_example_phone {
+  margin-left: 1%;
+  font-size: 85%;
+  margin-bottom: 15%;
+}
+
+.Response_translation_phone {
+  margin-left: 1%;
+  font-size: 85%;
 }
