@@ -10,9 +10,9 @@ import { Route, BrowserRouter as Router,
 import { Container } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { far } from '@fortawesome/free-regular-svg-icons'
-import { faExchangeAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 
-library.add(far, faExchangeAlt)
+library.add(far, faSyncAlt)
 
 class App extends React.Component {
 
@@ -35,12 +35,6 @@ class App extends React.Component {
           </Container>
           
         </Router>
-        {/*
-        <footer id="footer-div" className="container">
-        <p>Author : This Guy</p>
-        <a href="mailto:thisguy@mailservice.com">thisguy@mailservice.com</a>
-        </footer>
-        */}
       </div>
     );
   }

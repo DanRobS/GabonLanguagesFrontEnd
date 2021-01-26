@@ -20,20 +20,48 @@
   justify-content: center;
 }
 
-.dictionaryForm {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-top: 2%;
-  margin-left: 25%;
-  margin-right: 25%;
+.col_style_icon {
+  margin-top: 1%;
+  padding: 0.5%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Input_form {
+#button-tooltip {
+  font-size: 100%
+}
+
+#icon {
+  animation: arrow_spin 5s infinite;
+  /*color: crimson;*/
+}
+
+@keyframes arrow_spin {
+  100% {transform: rotate(360deg);}
+}
+
+#icon:hover {
+  opacity: 0.6;
+  transform: rotate(60deg);
+}
+
+#dictionaryForm {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2.5%;
+  padding-right: 5%;
+  margin-top: 2%;
   display: flex;
-  justify-content: center;
-  padding: 3%;
+}
+
+#input-group {
+  margin-top: 5%;
+  flex: 1;
 }
 
 #Response_div {
@@ -44,7 +72,7 @@
   border-style: solid;
   border-radius: 10px;
   margin-left: 5%;
-  margin-right: 5%;
+  flex: 1;
 }
 
 .Response_word {

@@ -5,13 +5,24 @@ import '../../custom.scss'
 import { Col, Container, Row, InputGroup, FormControl } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MediaQuery from 'react-responsive'
+import {OverlayTrigger, Tooltip} from 'react-bootstrap'
 
 class Dictionary extends React.Component {
 
+  
+
   render() {
+
+    //TOOLTIP FOR LANGUAGE CHANGE ICON - PADS AND LAPTOP SIZED SCREENS
+    const renderTooltip = (props) => (
+      <Tooltip id="button-tooltip" {...props}>
+        Traduire dans l'autre sens
+      </Tooltip>
+    );
+
     return (
       <div id="Main_div" className="container">
-        
+
         {/************************/}
         {/* PADS AND LAPTOP SIZE */}
         {/************************/}
@@ -21,30 +32,46 @@ class Dictionary extends React.Component {
               <Container>
                 <Row className="row_style">
                   <Col className="col_style">FR</Col>
-                  <Col className="col_style" xs={1}><FontAwesomeIcon icon="exchange-alt" /></Col>
+                  
+                  <OverlayTrigger
+                    placement="top"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip}>
+                    <Col className="col_style_icon" xs={1}>
+                      <a href="/"><FontAwesomeIcon id="icon" icon="sync-alt" /></a>
+                    </Col>
+                  </OverlayTrigger>
+                  
                   <Col className="col_style">NZ</Col>
                 </Row>
               </Container>
             </div>
 
-            <div className="dictionaryForm">
-            <InputGroup className="mb-6">
-                <FormControl
-                  placeholder="Type a word"
-                  aria-label="Recipient's username"
-                />
-                <InputGroup.Append>
-                  <Button variant="secondary">Button</Button>
-                </InputGroup.Append>
-              </InputGroup>
+            <div id="dictionaryForm">
+              <div id="input-group">
+                <InputGroup className="mb-6">
+                  <FormControl
+                    placeholder="Tapez un mot français..."
+                    aria-label="Recipient's username"
+                    autocomplete="true"
+                  />
+                  <InputGroup.Append>
+                    <Button variant="secondary">Rechercher</Button>
+                  </InputGroup.Append>
+                </InputGroup>
+              </div>
+              <div id="Response_div">
+                  <h2 className="Response_word"> Response word </h2>
+                  <h4 className="Response_example"> this is an example (inzebi) </h4>
+                  <h4 className="Response_translation"> this is an example translation in french </h4>
+              </div>
             </div>
           </div>
-          <div id="Response_div">
-              <h2 className="Response_word"> Response word </h2>
-              <h4 className="Response_example"> this is an example (inzebi) </h4>
-              <h4 className="Response_translation"> this is an example translation in french </h4>
-          </div>
+          
         </MediaQuery>
+
+
+
 
         {/***********************/}
         {/* PHONE-SIZED SCREENS */}
@@ -55,7 +82,7 @@ class Dictionary extends React.Component {
               <Container>
                 <Row className="row_style_phone">
                   <Col className="col_style_phone">FR</Col>
-                  <Col className="col_style_icon_phone" xs={1}><FontAwesomeIcon icon="exchange-alt" /></Col>
+                  <Col className="col_style_icon_phone" xs={2}><FontAwesomeIcon id="icon" icon="sync-alt" /></Col>
                   <Col className="col_style_phone">NZ</Col>
                 </Row>
               </Container>
@@ -64,11 +91,11 @@ class Dictionary extends React.Component {
             <div className="dictionaryForm_phone">
             <InputGroup className="mb-6">
                 <FormControl
-                  placeholder="Type a word"
-                  aria-label="Recipient's username"
+                  placeholder="Entrer un mot français..."
+                  aria-label="Recipient's username"z
                 />
                 <InputGroup.Append>
-                  <Button variant="secondary">Button</Button>
+                  <Button variant="secondary">Rechercher</Button>
                 </InputGroup.Append>
               </InputGroup>
             </div>
