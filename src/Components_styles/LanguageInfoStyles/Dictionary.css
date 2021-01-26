@@ -1,4 +1,8 @@
-.Form_div {
+#Form_div_frnz {
+  margin-top: 3%;
+}
+
+#Form_div_nzfr {
   margin-top: 3%;
 }
 
@@ -88,11 +92,19 @@
   margin-left: 1%;
 }
 
+.hide_div {
+  display: none;
+}
+
 /***********************/
 /*CSS FOR MEDIA QUERIES*/
 /***********************/
 
-.Form_div_phone {
+#Form_div_frnz_phone {
+  margin-top: 10%;
+}
+
+#Form_div_nzfr_phone {
   margin-top: 10%;
 }
 

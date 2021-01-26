@@ -6,7 +6,7 @@ import React from 'react'
 class About extends React.Component {
   render() {
     return(
-      <div className="Main-div">
+      <div id="Main-div" className="container">
         <h1>About</h1>
       </div>
     )

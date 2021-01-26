@@ -20,6 +20,28 @@ class Dictionary extends React.Component {
       </Tooltip>
     );
 
+    {/* PADS AND LAPTOP SIZE */}
+      function nzebiToFrench () {
+        document.getElementById("Form_div_frnz").classList.add("hide_div");
+        document.getElementById("Form_div_nzfr").classList.remove("hide_div");
+      }
+
+      function frenchToNzebi () {
+        document.getElementById("Form_div_frnz").classList.remove("hide_div");
+        document.getElementById("Form_div_nzfr").classList.add("hide_div");
+      }
+
+    {/* NZEBI TO FRENCH DIV */}
+      function nzebiToFrench_phone () {
+        document.getElementById("Form_div_frnz_phone").classList.add("hide_div");
+        document.getElementById("Form_div_nzfr_phone").classList.remove("hide_div");
+      }
+
+      function frenchToNzebi_phone () {
+        document.getElementById("Form_div_frnz_phone").classList.remove("hide_div");
+        document.getElementById("Form_div_nzfr_phone").classList.add("hide_div");
+      }
+
     return (
       <div id="Main_div" className="container">
 
@@ -27,7 +49,11 @@ class Dictionary extends React.Component {
         {/* PADS AND LAPTOP SIZE */}
         {/************************/}
         <MediaQuery minDeviceWidth={769}>
-          <div className="Form_div">
+
+          {/* /////////////////// */}
+          {/* FRENCH TO NZEBI DIV */}
+          {/* /////////////////// */}
+          <div id="Form_div_frnz">
             <div>
               <Container>
                 <Row className="row_style">
@@ -37,8 +63,8 @@ class Dictionary extends React.Component {
                     placement="top"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip}>
-                    <Col className="col_style_icon" xs={1}>
-                      <a href="/"><FontAwesomeIcon id="icon" icon="sync-alt" /></a>
+                    <Col onClick={nzebiToFrench} className="col_style_icon" xs={1}>
+                      <FontAwesomeIcon id="icon" icon="sync-alt" />
                     </Col>
                   </OverlayTrigger>
                   
@@ -67,7 +93,50 @@ class Dictionary extends React.Component {
               </div>
             </div>
           </div>
-          
+
+          {/* /////////////////// */}
+          {/* NZEBI TO FRENCH DIV */}
+          {/* /////////////////// */}
+          <div id="Form_div_nzfr" className="hide_div">
+            <div>
+              <Container>
+                <Row className="row_style">
+                  <Col className="col_style">NZ</Col>
+                  
+                  <OverlayTrigger
+                    placement="top"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip}>
+                    <Col onClick={frenchToNzebi} className="col_style_icon" xs={1}>
+                      <FontAwesomeIcon id="icon" icon="sync-alt" />
+                    </Col>
+                  </OverlayTrigger>
+                  
+                  <Col className="col_style">FR</Col>
+                </Row>
+              </Container>
+            </div>
+
+            <div id="dictionaryForm">
+              <div id="input-group">
+                <InputGroup className="mb-6">
+                  <FormControl
+                    placeholder="Tapez un mot inzebi..."
+                    aria-label="Recipient's username"
+                    autocomplete="true"
+                  />
+                  <InputGroup.Append>
+                    <Button variant="secondary">Rechercher</Button>
+                  </InputGroup.Append>
+                </InputGroup>
+              </div>
+              <div id="Response_div">
+                  <h2 className="Response_word"> Response word </h2>
+                  <h4 className="Response_example"> this is an example (inzebi) </h4>
+                  <h4 className="Response_translation"> this is an example translation in french </h4>
+              </div>
+            </div>
+          </div>
         </MediaQuery>
 
 
@@ -77,12 +146,17 @@ class Dictionary extends React.Component {
         {/* PHONE-SIZED SCREENS */}
         {/***********************/}
         <MediaQuery maxDeviceWidth={768}>
-          <div className="Form_div_phone">
+
+          
+          {/* FRENCH TO NZEBI DIV */}
+          <div id="Form_div_frnz_phone">
             <div>
               <Container>
                 <Row className="row_style_phone">
                   <Col className="col_style_phone">FR</Col>
-                  <Col className="col_style_icon_phone" xs={2}><FontAwesomeIcon id="icon" icon="sync-alt" /></Col>
+                  <Col onClick={nzebiToFrench_phone} className="col_style_icon_phone" xs={2}>
+                    <FontAwesomeIcon id="icon" icon="sync-alt" />
+                  </Col>
                   <Col className="col_style_phone">NZ</Col>
                 </Row>
               </Container>
@@ -92,18 +166,50 @@ class Dictionary extends React.Component {
             <InputGroup className="mb-6">
                 <FormControl
                   placeholder="Entrer un mot français..."
-                  aria-label="Recipient's username"z
+                  aria-label="Recipient's username"
                 />
                 <InputGroup.Append>
                   <Button variant="secondary">Rechercher</Button>
                 </InputGroup.Append>
               </InputGroup>
             </div>
-          </div>
-          <div id="Response_div_phone">
+            <div id="Response_div_phone">
               <h2 className="Response_word_phone"> Response word </h2>
               <h4 className="Response_example_phone"> this is an example (inzebi) </h4>
               <h4 className="Response_translation_phone"> this is an example translation in french </h4>
+            </div>
+          </div>
+
+          {/* NZEBI TO FRENCH DIV */}
+          <div id="Form_div_nzfr_phone" className="hide_div">
+            <div>
+              <Container>
+                <Row className="row_style_phone">
+                  <Col className="col_style_phone">NZ</Col>
+                  <Col onClick={frenchToNzebi_phone} className="col_style_icon_phone" xs={2}>
+                    <FontAwesomeIcon id="icon" icon="sync-alt" />
+                  </Col>
+                  <Col className="col_style_phone">FR</Col>
+                </Row>
+              </Container>
+            </div>
+
+            <div className="dictionaryForm_phone">
+            <InputGroup className="mb-6">
+                <FormControl
+                  placeholder="Entrer un mot inzebi..."
+                  aria-label="Recipient's username"
+                />
+                <InputGroup.Append>
+                  <Button variant="secondary">Rechercher</Button>
+                </InputGroup.Append>
+              </InputGroup>
+            </div>
+            <div id="Response_div_phone">
+              <h2 className="Response_word_phone"> Response word </h2>
+              <h4 className="Response_example_phone"> this is an example (inzebi) </h4>
+              <h4 className="Response_translation_phone"> this is an example translation in french </h4>
+            </div>
           </div>
         </MediaQuery>
       </div>

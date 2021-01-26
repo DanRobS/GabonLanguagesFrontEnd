@@ -20,9 +20,12 @@ class AppNavBar extends React.Component {
                             <Nav.Link className="homeLink" href="/">Home</Nav.Link>
                         </Nav.Item>
                         <NavDropdown title="Dictionaries" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/Dictionaries/Nzebi">Nzebi</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Dictionaries/Inzebi">Inzebi</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/Dictionaries/Fang">Fang</NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Item>
+                            <Nav.Link className="homeLink" href="/About">About</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                     </Navbar.Collapse>
                     </Navbar>
@@ -32,4 +35,4 @@ class AppNavBar extends React.Component {
     }
 }
 
-export default AppNavBar
+export default AppNavBar;

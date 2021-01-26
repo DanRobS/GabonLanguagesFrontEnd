@@ -28,7 +28,7 @@ class App extends React.Component {
             <div id="center-div">
               <Switch>
                 <Route exact path='/' component={Home}></Route>
-                <Route exact path='/Dictionaries/Nzebi' component={LanguageInfo}></Route>
+                <Route exact path='/Dictionaries/Inzebi' component={LanguageInfo}></Route>
                 <Route exact path='/about' component={About}></Route>
               </Switch>
             </div>
