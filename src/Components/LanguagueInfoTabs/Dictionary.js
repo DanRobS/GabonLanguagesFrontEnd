@@ -5,11 +5,23 @@ import '../../custom.scss'
 import { Col, Container, Row, InputGroup, FormControl } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MediaQuery from 'react-responsive'
-import {OverlayTrigger, Tooltip} from 'react-bootstrap'
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
 class Dictionary extends React.Component {
 
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      fetchedWords: {
+        
+      }
+    }
+  }
+
+  componentDidMount(){
+
+  }
 
   render() {
 
@@ -20,7 +32,7 @@ class Dictionary extends React.Component {
       </Tooltip>
     );
 
-    {/* PADS AND LAPTOP SIZE */}
+    /* PADS AND LAPTOP SIZE */
       function nzebiToFrench () {
         document.getElementById("Form_div_frnz").classList.add("hide_div");
         document.getElementById("Form_div_nzfr").classList.remove("hide_div");
@@ -31,7 +43,7 @@ class Dictionary extends React.Component {
         document.getElementById("Form_div_nzfr").classList.add("hide_div");
       }
 
-    {/* NZEBI TO FRENCH DIV */}
+    /* NZEBI TO FRENCH DIV */
       function nzebiToFrench_phone () {
         document.getElementById("Form_div_frnz_phone").classList.add("hide_div");
         document.getElementById("Form_div_nzfr_phone").classList.remove("hide_div");
@@ -50,9 +62,9 @@ class Dictionary extends React.Component {
         {/************************/}
         <MediaQuery minDeviceWidth={769}>
 
-          {/* /////////////////// */}
+          {/* ------------------- */}
           {/* FRENCH TO NZEBI DIV */}
-          {/* /////////////////// */}
+          {/* ------------------- */}
           <div id="Form_div_frnz">
             <div>
               <Container>
@@ -94,9 +106,9 @@ class Dictionary extends React.Component {
             </div>
           </div>
 
-          {/* /////////////////// */}
+          {/* ------------------- */}
           {/* NZEBI TO FRENCH DIV */}
-          {/* /////////////////// */}
+          {/* ------------------- */}
           <div id="Form_div_nzfr" className="hide_div">
             <div>
               <Container>
@@ -148,7 +160,9 @@ class Dictionary extends React.Component {
         <MediaQuery maxDeviceWidth={768}>
 
           
+          {/* ------------------- */}
           {/* FRENCH TO NZEBI DIV */}
+          {/* ------------------- */}
           <div id="Form_div_frnz_phone">
             <div>
               <Container>
@@ -167,6 +181,7 @@ class Dictionary extends React.Component {
                 <FormControl
                   placeholder="Entrer un mot français..."
                   aria-label="Recipient's username"
+                  autocomplete="true"
                 />
                 <InputGroup.Append>
                   <Button variant="secondary">Rechercher</Button>
@@ -180,7 +195,9 @@ class Dictionary extends React.Component {
             </div>
           </div>
 
+          {/* ------------------- */}
           {/* NZEBI TO FRENCH DIV */}
+          {/* ------------------- */}
           <div id="Form_div_nzfr_phone" className="hide_div">
             <div>
               <Container>
@@ -199,6 +216,7 @@ class Dictionary extends React.Component {
                 <FormControl
                   placeholder="Entrer un mot inzebi..."
                   aria-label="Recipient's username"
+                  autocomplete="true"
                 />
                 <InputGroup.Append>
                   <Button variant="secondary">Rechercher</Button>
